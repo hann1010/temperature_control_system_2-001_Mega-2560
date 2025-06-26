@@ -26,6 +26,8 @@
  ****************************************************/
 #include <Adafruit_MAX31865.h>
 
+#include <SoftwareSerial.h> // Comes with Arduino IDE
+
 void setup() {
   // put your setup code here, to run once:
 
