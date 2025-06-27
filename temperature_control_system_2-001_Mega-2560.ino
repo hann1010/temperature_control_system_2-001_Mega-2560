@@ -44,6 +44,19 @@ Adafruit_MAX31865 temperature_sensor_heating_inline = Adafruit_MAX31865(8, 11, 1
 Adafruit_MAX31865 temperature_sensor_heating_hotwater = Adafruit_MAX31865(7, 11, 12, 13);
 Adafruit_MAX31865 temperature_sensor_outdoor = Adafruit_MAX31865(6, 11, 12, 13);
 
+// use hardware SPI, just pass in the CS pin
+//Adafruit_MAX31865 max = Adafruit_MAX31865(10);
+
+// The value of the Rref resistor. Use 430.0 for PT100 and 4300.0 for PT1000
+#define RREF_burner      425.0
+#define RREF_tanktop      425.0
+#define RREF_inline      425.0
+#define RREF_hotwater      425.0
+#define RREF_outdoor      425.0
+// The 'nominal' 0-degrees-C resistance of the sensor
+// 100.0 for PT100, 1000.0 for PT1000
+#define RNOMINAL  100.0
+
 void setup() {
   // put your setup code here, to run once:
 
