@@ -68,7 +68,7 @@ Note for SoftwareSerial:
  8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI).
 -------------------------------------------------------------------*/
 
-SoftwareSerial mySerial(51, 50); // 3=TX 2=RX in GSM shield side Arduino uno only
+SoftwareSerial mySerial(51, 50); // 50=TX 51=RX 
 
 void setup() {
   // put your setup code here, to run once:
