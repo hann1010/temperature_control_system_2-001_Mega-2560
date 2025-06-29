@@ -77,8 +77,11 @@ float heating_inline;
 float heating_hotwater;
 float outdoor;
 
-void setup() {
-  // put your setup code here, to run once:
+void setup() 
+{
+  Serial.begin(9600);  // initialize the hardware UART for speed 9600
+  test_IIC(); //Debug I2C
+  lcd.begin(20,4);         // initialize the lcd for 20 chars 4 lines
 
 }
 
