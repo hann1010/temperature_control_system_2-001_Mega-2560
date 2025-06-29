@@ -68,7 +68,14 @@ Note for SoftwareSerial:
  8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI).
 -------------------------------------------------------------------*/
 
-SoftwareSerial mySerial(51, 50); // 50=TX 51=RX 
+SoftwareSerial mySerial(51, 50); // 51=RX 50=TX
+
+/*-----( Declare Variables )-----*/
+float heating_burner;
+float heating_tanktop;
+float heating_inline;
+float heating_hotwater;
+float outdoor;
 
 void setup() {
   // put your setup code here, to run once:
