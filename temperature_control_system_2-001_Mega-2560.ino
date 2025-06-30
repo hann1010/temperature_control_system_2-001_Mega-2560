@@ -88,6 +88,8 @@ void setup()
   temperature_sensor_heating_inline.begin(MAX31865_2WIRE);
   temperature_sensor_heating_hotwater.begin(MAX31865_2WIRE);
   temperature_sensor_outdoor.begin(MAX31865_2WIRE);
+
+  lcd.backlight(); // set backlight on
 }
 
 void loop() {
