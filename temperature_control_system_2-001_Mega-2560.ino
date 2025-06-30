@@ -83,6 +83,11 @@ void setup()
   test_IIC(); //Debug I2C
   lcd.begin(20,4);         // initialize the lcd for 20 chars 4 lines
 
+  temperature_sensor_heating_burner.begin(MAX31865_2WIRE);  // Set to 2WIRE or 4WIRE as necessary
+  temperature_sensor_heating_tanktop.begin(MAX31865_2WIRE); 
+  temperature_sensor_heating_inline.begin(MAX31865_2WIRE);
+  temperature_sensor_heating_hotwater.begin(MAX31865_2WIRE);
+  temperature_sensor_outdoor.begin(MAX31865_2WIRE);
 }
 
 void loop() {
