@@ -77,6 +77,7 @@ float heating_inline;
 float heating_hotwater;
 float outdoor;
 
+/*----( SETUP: RUNS ONCE )----*/
 void setup() 
 {
   Serial.begin(9600);  // initialize the hardware UART for speed 9600
