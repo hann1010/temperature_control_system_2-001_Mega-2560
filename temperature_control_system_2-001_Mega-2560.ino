@@ -92,6 +92,12 @@ void setup()
   temperature_sensor_outdoor.begin(MAX31865_2WIRE);
 
   lcd.backlight(); // set backlight on
+
+  //-------- Write characters on the display ----------------
+  // NOTE: Cursor Position: CHAR, LINE) start at 0 
+  lcd.setCursor(0,1); //Start at character 0 on line 2
+  lcd.print("Booting up system...");
+  delay(1000);
 }
 
 void loop() {
