@@ -109,6 +109,11 @@ void setup()
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  /*----( LOOP: RUNS CONSTANTLY )----*/
+
+  /*----------Print some values to terminal-----------*/
+  //Serial.print("outdoor temperature = "); Serial.println(Temperature_sensor_outdoor.temperature(RNOMINAL, RREF_outdoor));
+
+
 
 }
