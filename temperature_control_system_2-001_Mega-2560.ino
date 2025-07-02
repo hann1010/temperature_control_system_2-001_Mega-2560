@@ -77,9 +77,10 @@ float heating_inline;
 float heating_hotwater;
 float outdoor;
 
-/*----( SETUP: RUNS ONCE )----*/
+
 void setup() 
 {
+  /*----( SETUP: RUNS ONCE )----*/
   Serial.begin(9600);  // initialize the hardware UART for speed 9600
   mySerial.begin(9600);   // initialize the baud rate for ESP32 Module
   test_IIC(); //Debug I2C
@@ -98,6 +99,13 @@ void setup()
   lcd.setCursor(0,1); //Start at character 0 on line 2
   lcd.print("Booting up system...");
   delay(1000);
+  terminal_display(); // Print some values to terminal
+  lcd.clear();
+  lcd.setCursor(0,1); //Start at character 0 on line 2
+  lcd.print("Temperature control system 2-001_Mega-2560");
+  delay(5000);
+  lcd.clear();
+  /*--(end setup )---*/
 }
 
 void loop() {
