@@ -113,7 +113,11 @@ void loop() {
 
   /*----------Print some values to terminal-----------*/
   //Serial.print("outdoor temperature = "); Serial.println(Temperature_sensor_outdoor.temperature(RNOMINAL, RREF_outdoor));
-
+  /*----------Print to LCD-----------*/
+  for(int i = 0; i< 10; i++)
+  {
+    temperatureRead(); // Reading temperature from sensor)
+    
 
 
 }
