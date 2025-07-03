@@ -108,7 +108,8 @@ void setup()
   /*--(end setup )---*/
 }
 
-void loop() {
+void loop() 
+{
   /*----( LOOP: RUNS CONSTANTLY )----*/
 
   /*----------Print some values to terminal-----------*/
@@ -117,7 +118,14 @@ void loop() {
   for(int i = 0; i< 10; i++)
   {
     temperatureRead(); // Reading temperature from sensor)
-    
+    if (i < 5) 
+      {
+        //lcd.clear();
+        if ( i == 0)
+            {
+              lcd.clear();
+            }
+        lcd.setCursor(0,0);
 
 
 }
