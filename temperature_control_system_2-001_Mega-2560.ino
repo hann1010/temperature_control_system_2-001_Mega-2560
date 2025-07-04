@@ -122,10 +122,15 @@ void loop()
       {
         //lcd.clear();
         if ( i == 0)
-            {
-              lcd.clear();
-            }
+          {
+            lcd.clear();
+          }
         lcd.setCursor(0,0);
-
+        lcd.print("Burner = "); lcd.print(heating_burner);
+        lcd.setCursor(0, 1);
+        lcd.print("Inline = "); lcd.print(heating_inline);
+        //lcd.setCursor(10, 1);
+        //lcd.print("");
+        //lcd.setCursor(12, 2);
 
 }
