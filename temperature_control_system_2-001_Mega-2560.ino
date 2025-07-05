@@ -139,5 +139,12 @@ void loop()
         //lcd.print(" = "); lcd.print(max2.temperature(RNOMINAL2, RREF2));   
         delay(1000);                       
       }
+    else
+      {
+        if ( i == 5)
+          {
+            lcd.clear();
+          }      
+        //lcd.clear();
 
 }
