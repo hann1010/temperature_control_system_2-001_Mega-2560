@@ -157,5 +157,8 @@ void loop()
         // lcd.clear(); 
         // lcd.print("str "); lcd.print(inputString.substring(90,130));
         delay(1000);
-
+      }
+    }
+  }
+  /* --(end main loop )-- */
 }
