@@ -165,3 +165,11 @@ void loop()
 
 
 void temperatureRead()
+{
+  /* Reading temperature from sensors
+  -------------------------------------------*/
+  heating_burner = temperature_sensor_heating_burner.temperature(RNOMINAL, RREF_burner);
+  heating_tanktop = temperature_sensor_heating_tanktop.temperature(RNOMINAL, RREF_tanktop);
+  heating_inline = temperature_sensor_heating_inline.temperature(RNOMINAL, RREF_inline);
+  heating_hotwater = temperature_sensor_heating_hotwater.temperature(RNOMINAL, RREF_hotwater);
+  outdoor = temperature_sensor_outdoor.temperature(RNOMINAL, RREF_outdoor);
