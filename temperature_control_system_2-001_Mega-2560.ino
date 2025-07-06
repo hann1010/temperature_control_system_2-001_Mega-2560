@@ -162,3 +162,6 @@ void loop()
   }
   /* --(end main loop )-- */
 }
+
+
+void temperatureRead()
