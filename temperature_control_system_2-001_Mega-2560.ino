@@ -173,9 +173,13 @@ void temperatureRead()
   heating_inline = temperature_sensor_heating_inline.temperature(RNOMINAL, RREF_inline);
   heating_hotwater = temperature_sensor_heating_hotwater.temperature(RNOMINAL, RREF_hotwater);
   outdoor = temperature_sensor_outdoor.temperature(RNOMINAL, RREF_outdoor);
-   //Debug
+  //Debug
   /*
   Serial.print("Burner = ");
   Serial.println(heating_burner);
   Serial.print("Tank top = ");
   Serial.println(heating_tanktop);
+  Serial.print("Inline = ");
+  Serial.println(heating_inline);
+  Serial.print("Hot water = ");
+  Serial.println(heating_hotwater);
