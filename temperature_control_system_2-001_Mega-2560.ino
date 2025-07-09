@@ -187,3 +187,12 @@ void temperatureRead()
   Serial.println(outdoor);
     */
 }
+
+
+void serialEvent()
+{
+  while (mySerial.available())
+  {
+    Serial.print("serial available debug only");
+  }
+}
