@@ -196,3 +196,9 @@ void serialEvent()
     Serial.print("serial available debug only");
   }
 }
+
+
+void test_IIC() 
+//Debug I2C
+{
+  Serial.println ()
