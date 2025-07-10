@@ -206,3 +206,12 @@ void test_IIC()
   byte count = 0;
   Wire.begin();
   for (byte i = 1; i < 120; i++)
+  {
+    Wire.beginTransmission (i);
+    if (Wire.endTransmission () == 0)
+      {
+      Serial.print ("Found address: ");
+      Serial.print (i, DEC);
+      Serial.print (" (0x");
+      Serial.print (i, HEX);
+      Serial.println (")");
