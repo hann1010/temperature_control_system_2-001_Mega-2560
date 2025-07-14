@@ -28,6 +28,12 @@
 
 #include <SoftwareSerial.h> // Comes with Arduino IDE
 
+/*-----( Declare Constants )-----*/
+const int tempValueAdd1 = 52;   // Pin for tempeture value Add1, ESP32
+const int tempValueAdd2 = 53;   // Pin for tempeture value Add2, ESP32
+const int tempValueAdd3 = 54;   // Pin for tempeture value Add3, ESP32
+
+
 /*-----( Declare objects )-----*/
 // set the LCD address to 0x20 for a 20 chars 4 line display
 // Set the pins on the I2C chip used for LCD connections:
