@@ -93,6 +93,7 @@ void setup()
   lcd.begin(20,4);         // initialize the lcd for 20 chars 4 lines
 
   digitalWrite(tempValueAdd1, LOW); // Set Add1 pin to Low
+  digitalWrite(tempValueAdd2, LOW); // Set Add2 pin to Low
 
   temperature_sensor_heating_burner.begin(MAX31865_2WIRE);  // Set to 2WIRE or 4WIRE as necessary
   temperature_sensor_heating_tanktop.begin(MAX31865_2WIRE); 
