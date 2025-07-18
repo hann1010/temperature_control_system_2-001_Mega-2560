@@ -233,3 +233,8 @@ void test_IIC()
   Serial.print (count, DEC);
   Serial.println (" device(s).");
 }
+
+void sendData()
+{
+  
+}
