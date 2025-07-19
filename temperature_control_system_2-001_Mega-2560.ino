@@ -237,5 +237,5 @@ void test_IIC()
 
 void sendData()
 {
-
+  // Send temperature data to ESP32 via UART
 }
