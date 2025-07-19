@@ -82,6 +82,7 @@ float heating_tanktop;
 float heating_inline;
 float heating_hotwater;
 float outdoor;
+float dataTemp;
 
 
 void setup() 
@@ -236,5 +237,5 @@ void test_IIC()
 
 void sendData()
 {
-  
+
 }
