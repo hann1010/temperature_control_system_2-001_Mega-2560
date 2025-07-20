@@ -225,7 +225,7 @@ void test_IIC()
       Serial.print (" (0x");
       Serial.print (i, HEX);
       Serial.println (")");
-            count++;
+      count++;
       delay (1);  // maybe unneeded?
     } // end of good response
   } // end of for loop
