@@ -219,7 +219,7 @@ void test_IIC()
   {
     Wire.beginTransmission (i);
     if (Wire.endTransmission () == 0)
-      {
+    {
       Serial.print ("Found address: ");
       Serial.print (i, DEC);
       Serial.print (" (0x");
@@ -227,7 +227,7 @@ void test_IIC()
       Serial.println (")");
             count++;
       delay (1);  // maybe unneeded?
-      } // end of good response
+    } // end of good response
   } // end of for loop
     Serial.println ("Done.");
   Serial.print ("Found ");
