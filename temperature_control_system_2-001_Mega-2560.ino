@@ -210,6 +210,9 @@ void serialEvent()
 
 void test_IIC() 
 //Debug I2C
+//Since the seller doesn't provide any info I neede to find the address for the module so I ran an I2C scanner
+//Written by Nick Gammon
+// Date: 20th April 2011
 {
   Serial.println ()
   Serial.println ("I2C scanner. Scanning ...");
