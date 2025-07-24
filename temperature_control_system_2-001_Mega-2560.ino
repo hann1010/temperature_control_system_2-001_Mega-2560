@@ -242,4 +242,5 @@ void sendData()
 {
   // Send temperature data to ESP32 via UART
   dataTemp = heating_burner // For testing
+  mySerial.println(dataTemp); // For testing
 }
