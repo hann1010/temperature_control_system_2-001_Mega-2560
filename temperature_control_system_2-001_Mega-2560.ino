@@ -250,6 +250,7 @@ void sendData()
     switch (i)
     {
       case 0:
+      digitalWrite(tempValueAdd1, LOW); // Set Add1 pin to Low
       //
       break;
       case 1:
