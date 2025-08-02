@@ -251,6 +251,7 @@ void sendData()
     {
       case 0:
       digitalWrite(tempValueAdd1, LOW); // Set Add1 pin to Low
+      digitalWrite(tempValueAdd2, LOW); // Set Add3 pin to Low
       //
       break;
       case 1:
