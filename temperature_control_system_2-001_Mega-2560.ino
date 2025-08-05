@@ -270,4 +270,5 @@ void sendData()
       break;
     }
   }
+  mySerial.println(dataTemp);
 }
