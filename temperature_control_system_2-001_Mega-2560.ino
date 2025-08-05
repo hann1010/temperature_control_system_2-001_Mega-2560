@@ -269,6 +269,6 @@ void sendData()
       //
       break;
     }
+    mySerial.println(dataTemp);
   }
-  mySerial.println(dataTemp);
 }
