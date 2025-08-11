@@ -264,6 +264,7 @@ void sendData()
       //
       break;
       case 2:
+      digitalWrite(tempValueAdd1, LOW); // Set Add1 pin to Low
       //
       break;
       case 3:
