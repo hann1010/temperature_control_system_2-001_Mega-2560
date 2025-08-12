@@ -257,7 +257,7 @@ void sendData()
       //
       break;
       case 1:
-      digitalWrite(tempValueAdd2, HIGH); // Set Add2 pin to High
+      digitalWrite(tempValueAdd1, HIGH); // Set Add1 pin to High
       digitalWrite(tempValueAdd2, LOW); // Set Add2 pin to Low
       digitalWrite(tempValueAdd3, LOW); // Set Add3 pin to Low
       dataTemp = heating_tanktop;
