@@ -281,6 +281,7 @@ void sendData()
       digitalWrite(tempValueAdd1, LOW); // Set Add1 pin to Low
       digitalWrite(tempValueAdd2, LOW); // Set Add2 pin to Low
       digitalWrite(tempValueAdd3, HIGH); // Set Add3 pin to High
+      dataTemp = outdoor;
       //
       break;
     }
