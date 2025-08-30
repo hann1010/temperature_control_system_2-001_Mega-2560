@@ -239,6 +239,13 @@ void test_IIC()
   Serial.println (" device(s).");
 }
 
+
+void sendDataTest()
+{
+
+}
+
+
 void sendData()
 {
   // Send temperature data to ESP32 via UART
