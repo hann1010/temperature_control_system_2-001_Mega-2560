@@ -243,6 +243,7 @@ void test_IIC()
 void sendDataTest()
 {
   //Test send temperature data to ESP32 via UART
+  dataTemp = heating_burner;
 }
 
 
