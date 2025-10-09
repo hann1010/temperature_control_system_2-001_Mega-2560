@@ -125,7 +125,10 @@ void loop()
 
   /*----------Print some values to terminal-----------*/
   //Serial.print("outdoor temperature = "); Serial.println(Temperature_sensor_outdoor.temperature(RNOMINAL, RREF_outdoor));
+  
+  // Send data via softa UART
   sendDataTest();
+  
   /*----------Print to LCD-----------*/
   sendDataTest();
   for(int i = 0; i< 10; i++)
