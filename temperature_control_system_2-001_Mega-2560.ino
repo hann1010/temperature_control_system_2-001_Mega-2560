@@ -128,7 +128,7 @@ void loop()
   
   // Send data via softa UART
   sendDataTest(); // Debug only
-  // sendData(); //
+  // sendData(); // Send all data
   
   /*----------Print to LCD-----------*/
   sendDataTest();
