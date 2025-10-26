@@ -89,7 +89,7 @@ void setup()
 {
   /*----( SETUP: RUNS ONCE )----*/
   Serial.begin(9600);  // initialize the hardware UART for speed 9600
-  mySerial.begin(9600);   // initialize the baud rate for ESP32 Module
+  //mySerial.begin(9600);   // initialize the baud rate for ESP32 Module
   test_IIC(); //Debug I2C
   lcd.begin(20,4);         // initialize the lcd for 20 chars 4 lines
 
@@ -110,10 +110,9 @@ void setup()
   lcd.setCursor(0,1); //Start at character 0 on line 2
   lcd.print("Booting up system...");
   delay(1000);
-  terminal_display(); // Print some values to terminal
   lcd.clear();
   lcd.setCursor(0,1); //Start at character 0 on line 2
-  lcd.print("Temperature control system 2-001_Mega-2560");
+  lcd.print("Temp cont sys 2-001_Mega-2560");
   delay(5000);
   lcd.clear();
   /*--(end setup )---*/
@@ -131,7 +130,7 @@ void loop()
   // sendData(); // Send all data
   
   /*----------Print to LCD-----------*/
-  sendDataTest();
+  //sendDataTest();
   for(int i = 0; i< 10; i++)
   {
     temperatureRead(); // Reading temperature from sensor)
@@ -175,7 +174,7 @@ void loop()
         // lcd.print("str "); lcd.print(inputString.substring(90,130));
         delay(1000);
       }
-    }
+    
   }
   /* --(end main loop )-- */
 }
@@ -221,7 +220,7 @@ void test_IIC()
 //Written by Nick Gammon
 // Date: 20th April 2011
 {
-  Serial.println ()
+  Serial.println ();
   Serial.println ("I2C scanner. Scanning ...");
   byte count = 0;
   Wire.begin();
