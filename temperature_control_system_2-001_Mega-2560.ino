@@ -26,7 +26,7 @@
  ****************************************************/
 #include <Adafruit_MAX31865.h>
 
-#include <SoftwareSerial.h> // Comes with Arduino IDE
+//#include <SoftwareSerial.h> // Comes with Arduino IDE
 
 /*-----( Declare Constants )-----*/
 const int tempValueAdd1 = 52;   // Pin for tempeture value Add1, ESP32
@@ -89,7 +89,8 @@ void setup()
 {
   /*----( SETUP: RUNS ONCE )----*/
   Serial.begin(9600);  // initialize the hardware UART for speed 9600
-  mySerial.begin(9600);   // initialize the baud rate for ESP32 Module
+  Serial2.begin(9600);  // initialize the hardware UART for speed 9600
+  //mySerial.begin(9600);   // initialize the baud rate for ESP32 Module
   test_IIC(); //Debug I2C
   lcd.begin(20,4);         // initialize the lcd for 20 chars 4 lines
 
@@ -204,7 +205,7 @@ void temperatureRead()
     */
 }
 
-
+/*
 void serialEvent()
 {
   while (mySerial.available())
@@ -212,7 +213,7 @@ void serialEvent()
     Serial.print("serial available debug only");
   }
 }
-
+*/
 
 void test_IIC() 
 //Debug I2C
