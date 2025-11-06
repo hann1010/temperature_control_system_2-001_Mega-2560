@@ -252,7 +252,7 @@ void sendDataTest()
   dataTemp = heating_burner;
   //mySerial.println(dataTemp);
   String tmp2 = String(dataTemp, 2);
-  mySerial.println("Test" + tmp2);
+  Serial2.println("Test" + tmp2);
   mySerial.println(char(26)); // ASCII code of CTRL+Z
   Serial.println("Test data send...");
 }
