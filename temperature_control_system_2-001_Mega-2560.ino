@@ -74,7 +74,7 @@ Note for SoftwareSerial:
  8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI).
 -------------------------------------------------------------------*/
 
-SoftwareSerial mySerial(51, 50); // 51=RX 50=TX
+//SoftwareSerial mySerial(51, 50); // 51=RX 50=TX
 
 /*-----( Declare Variables )-----*/
 float heating_burner;
@@ -252,7 +252,7 @@ void sendDataTest()
   dataTemp = heating_burner;
   //mySerial.println(dataTemp);
   String tmp2 = String(dataTemp, 2);
-  //Serial2.println("Test" + tmp2);
+  Serial2.println("Test" + tmp2);
   Serial2.println("Test");
   //mySerial.println(char(26)); // ASCII code of CTRL+Z
   Serial.println("Test data send...");
@@ -304,6 +304,6 @@ void sendData()
       break;
     }
     delay(50);
-    mySerial.println(dataTemp);
+    //mySerial.println(dataTemp);
   }
 }
