@@ -263,47 +263,5 @@ void sendData()
 {
   // Send temperature data to ESP32 via UART
 
-  for(int i = 0; i < 4; i++)
-  {
-    switch (i)
-    {
-      case 0:
-      digitalWrite(tempValueAdd1, LOW); // Set Add1 pin to Low
-      digitalWrite(tempValueAdd2, LOW); // Set Add2 pin to Low
-      digitalWrite(tempValueAdd3, LOW); // Set Add3 pin to Low
-      dataTemp = heating_burner;
-      //
-      break;
-      case 1:
-      digitalWrite(tempValueAdd1, HIGH); // Set Add1 pin to High
-      digitalWrite(tempValueAdd2, LOW); // Set Add2 pin to Low
-      digitalWrite(tempValueAdd3, LOW); // Set Add3 pin to Low
-      dataTemp = heating_tanktop;
-      //
-      break;
-      case 2:
-      digitalWrite(tempValueAdd1, LOW); // Set Add1 pin to Low
-      digitalWrite(tempValueAdd2, HIGH); // Set Add2 pin to High
-      digitalWrite(tempValueAdd3, LOW); // Set Add3 pin to Low
-      dataTemp = heating_inline;
-      //
-      break;
-      case 3:
-      digitalWrite(tempValueAdd1, HIGH); // Set Add1 pin to High
-      digitalWrite(tempValueAdd2, HIGH); // Set Add2 pin to High
-      digitalWrite(tempValueAdd3, LOW); // Set Add3 pin to Low
-      dataTemp = heating_hotwater;
-      //
-      break;
-      case 4:
-      digitalWrite(tempValueAdd1, LOW); // Set Add1 pin to Low
-      digitalWrite(tempValueAdd2, LOW); // Set Add2 pin to Low
-      digitalWrite(tempValueAdd3, HIGH); // Set Add3 pin to High
-      dataTemp = outdoor;
-      //
-      break;
-    }
-    delay(50);
-    //mySerial.println(dataTemp);
-  }
+  
 }
