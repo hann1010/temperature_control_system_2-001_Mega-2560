@@ -29,9 +29,6 @@
 //#include <SoftwareSerial.h> // Comes with Arduino IDE
 
 /*-----( Declare Constants )-----*/
-const int tempValueAdd1 = 52;   // Pin for tempeture value Add1, ESP32
-const int tempValueAdd2 = 53;   // Pin for tempeture value Add2, ESP32
-const int tempValueAdd3 = 54;   // Pin for tempeture value Add3, ESP32
 
 
 /*-----( Declare objects )-----*/
