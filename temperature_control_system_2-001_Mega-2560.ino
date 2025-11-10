@@ -120,11 +120,11 @@ void loop()
   //Serial.print("outdoor temperature = "); Serial.println(Temperature_sensor_outdoor.temperature(RNOMINAL, RREF_outdoor));
   
   // Send data via softa UART
-  sendDataTest(); // Debug only
-  // sendData(); // Send all data
+  //sendDataTest(); // Debug only
+  sendData(); // Send all data
   
   /*----------Print to LCD-----------*/
-  sendDataTest();
+  
   for(int i = 0; i< 10; i++)
   {
     temperatureRead(); // Reading temperature from sensor)
@@ -255,6 +255,6 @@ void sendDataTest()
 void sendData()
 {
   // Send temperature data to ESP32 via UART
-
-  
+  Serial2.println("Burner#" + String(heating_burner, 2));
+  Serial2.println("Tanktop#" + String(heating_tanktop, 2));
 }
