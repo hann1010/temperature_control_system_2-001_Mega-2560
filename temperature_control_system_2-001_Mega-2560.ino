@@ -124,7 +124,6 @@ void loop()
   sendData(); // Send all data
   
   /*----------Print to LCD-----------*/
-  
   for(int i = 0; i< 10; i++)
   {
     temperatureRead(); // Reading temperature from sensor)
@@ -257,4 +256,5 @@ void sendData()
   // Send temperature data to ESP32 via UART
   Serial2.println("Burner#" + String(heating_burner, 2));
   Serial2.println("Tanktop#" + String(heating_tanktop, 2));
+  Serial2.println("Inline#" + String(heating_inline, 2));
 }
