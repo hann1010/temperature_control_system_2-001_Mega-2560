@@ -257,5 +257,5 @@ void sendData()
   Serial2.println("Burner#" + String(heating_burner, 2));
   Serial2.println("Tanktop#" + String(heating_tanktop, 2));
   Serial2.println("Inline#" + String(heating_inline, 2));
-  Serial2.println("hotwater#" + String(heating_hotwater, 2));
+  Serial2.println("Hotwater#" + String(heating_hotwater, 2));
 }
