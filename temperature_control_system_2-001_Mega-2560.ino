@@ -261,3 +261,9 @@ void sendData()
   Serial2.println("Hotwater#" + String(heating_hotwater, 2));
   Serial2.println("Outdoor#" + String(outdoor, 2));
 }
+
+
+void sendData2()
+{
+
+}
