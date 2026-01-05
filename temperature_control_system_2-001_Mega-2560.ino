@@ -122,7 +122,6 @@ void loop()
   
   // Send data via softa UART
   //sendDataTest(); // Debug only
-  sendData(); // Send all data
   
   /*----------Print to LCD-----------*/
   for(int i = 0; i< 10; i++)
@@ -134,6 +133,7 @@ void loop()
         if ( i == 0)
           {
             lcd.clear();
+            sendData(); // Send 1/2 data via UART
           }
         lcd.setCursor(0,0);
         lcd.print("Burner = "); lcd.print(heating_burner);
