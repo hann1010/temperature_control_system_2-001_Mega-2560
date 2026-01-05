@@ -254,7 +254,7 @@ void sendDataTest()
 
 void sendData()
 {
-  // Send temperature data to ESP32 via UART
+  // Send 1/2 temperature data to ESP32 via UART
   Serial2.println("Burner#" + String(heating_burner, 2));
   Serial2.println("Tanktop#" + String(heating_tanktop, 2));
   Serial2.println("Inline#" + String(heating_inline, 2));
