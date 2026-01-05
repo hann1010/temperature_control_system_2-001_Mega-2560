@@ -80,6 +80,7 @@ float heating_inline;
 float heating_hotwater;
 float outdoor;
 float dataTemp;
+String uptime;
 
 
 void setup() 
