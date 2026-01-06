@@ -154,6 +154,7 @@ void loop()
         if ( i == 5)
           {
             lcd.clear();
+            sendData2(); // Send 2/2 data via UART
           }      
         //lcd.clear();
         lcd.setCursor(0,0);
