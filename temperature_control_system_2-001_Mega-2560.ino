@@ -266,5 +266,6 @@ void sendData()
 
 void sendData2()
 {
+  // Send 2/2 temperature data to ESP32 via UART
 
 }
