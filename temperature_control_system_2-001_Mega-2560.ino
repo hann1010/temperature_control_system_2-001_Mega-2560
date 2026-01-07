@@ -269,4 +269,5 @@ void sendData2()
   // Send 2/2 temperature data to ESP32 via UART
   Serial2.println("Hotwater#" + String(heating_hotwater, 2));
   Serial2.println("Outdoor#" + String(outdoor, 2));
+  Serial2.println("UpTime_m#" + (uptime));
 }
