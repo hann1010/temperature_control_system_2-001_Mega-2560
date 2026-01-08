@@ -165,7 +165,7 @@ void loop()
         // lcd.print("P No = "); lcd.print(phoneNro);
         lcd.setCursor(0,3);
         uptime = String(millis()/60000); 
-        lcd.print("Up time(min) ="); lcd.print(millis()/60000);
+        lcd.print("Up time(min) ="); lcd.print(uptime);
         // lcd.clear(); 
         // lcd.print("str "); lcd.print(inputString.substring(90,130));
         delay(1000);
