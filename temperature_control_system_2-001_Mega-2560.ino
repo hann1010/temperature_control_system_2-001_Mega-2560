@@ -126,7 +126,6 @@ void loop()
     temperatureRead(); // Reading temperature from sensor)
     if (i < 5) 
       {
-        //lcd.clear();
         if ( i == 0)
           {
             lcd.clear();
