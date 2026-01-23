@@ -89,7 +89,6 @@ void setup()
   /*----( SETUP: RUNS ONCE )----*/
   Serial.begin(9600);  // initialize the hardware UART for speed 9600
   Serial2.begin(9600);  // initialize the hardware UART for speed 9600
-  //mySerial.begin(9600);   // initialize the baud rate for ESP32 Module
   test_IIC(); //Debug I2C
   lcd.begin(20,4);         // initialize the lcd for 20 chars 4 lines
 
