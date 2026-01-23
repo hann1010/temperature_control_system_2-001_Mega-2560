@@ -135,7 +135,6 @@ void loop()
         lcd.print("Burner = "); lcd.print(heating_burner);
         lcd.setCursor(0, 1);
         lcd.print("Inline = "); lcd.print(heating_inline);
-        //lcd.setCursor(10, 1);
         //lcd.print("");
         //lcd.setCursor(12, 2);
         lcd.setCursor(0, 2);
