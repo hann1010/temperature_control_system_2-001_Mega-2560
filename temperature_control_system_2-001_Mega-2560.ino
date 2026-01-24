@@ -138,8 +138,7 @@ void loop()
         lcd.setCursor(0, 2);
         lcd.print("Hot water = "); lcd.print(heating_hotwater);
         lcd.setCursor(0, 3);
-        lcd.print("Out temp = "); lcd.print(outdoor);
-        //lcd.print(" = "); lcd.print(max2.temperature(RNOMINAL2, RREF2));   
+        lcd.print("Out temp = "); lcd.print(outdoor); 
         delay(1000);                       
       }
     else
