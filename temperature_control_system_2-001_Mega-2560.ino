@@ -147,8 +147,7 @@ void loop()
           {
             lcd.clear();
             sendData2(); // Send 2/2 data via UART
-          }      
-        //lcd.clear();
+          }
         lcd.setCursor(0,0);
         lcd.print("Burner = "); lcd.print(heating_burner);
         lcd.setCursor(0,1);
