@@ -190,7 +190,7 @@ void temperatureRead()
 /*
 void serialEvent()
 {
-  while (mySerial.available())
+  
   
 }
 */
