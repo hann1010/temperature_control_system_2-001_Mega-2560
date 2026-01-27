@@ -192,7 +192,7 @@ void serialEvent()
 {
   while (mySerial.available())
   {
-    Serial.print("serial available debug only");
+    
   }
 }
 */
