@@ -188,7 +188,7 @@ void temperatureRead()
 }
 
 /*
-void serialEvent()
+
 
 */
 
