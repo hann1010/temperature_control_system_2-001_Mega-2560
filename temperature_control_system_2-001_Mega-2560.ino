@@ -189,10 +189,7 @@ void temperatureRead()
 
 /*
 void serialEvent()
-{
-  
-  
-}
+
 */
 
 void test_IIC() 
