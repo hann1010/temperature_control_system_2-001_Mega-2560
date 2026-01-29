@@ -187,10 +187,6 @@ void temperatureRead()
     */
 }
 
-/*
-
-
-*/
 
 void test_IIC() 
 //Debug I2C
