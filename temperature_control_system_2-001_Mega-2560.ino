@@ -72,7 +72,6 @@ Note for SoftwareSerial:
  8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI).
 -------------------------------------------------------------------*/
 
-//SoftwareSerial mySerial(51, 50); // 51=RX 50=TX
 
 /*-----( Declare Variables )-----*/
 float heating_burner;
