@@ -69,7 +69,7 @@ Note for SoftwareSerial:
 
  Not all pins on the Leonardo and Micro support change interrupts,
  so only the following can be used for RX:
- 8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI).
+ 
 -------------------------------------------------------------------*/
 
 
