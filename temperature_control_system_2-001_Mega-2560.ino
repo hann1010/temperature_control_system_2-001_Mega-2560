@@ -62,7 +62,7 @@ Adafruit_MAX31865 temperature_sensor_outdoor = Adafruit_MAX31865(6, 11, 12, 13);
 #define RNOMINAL  100.0
 
 /*-----------------------------------------------------------------
-Note for SoftwareSerial:
+
 -------------------------------------------------------------------*/
 
 
