@@ -61,11 +61,6 @@ Adafruit_MAX31865 temperature_sensor_outdoor = Adafruit_MAX31865(6, 11, 12, 13);
 // 100.0 for PT100, 1000.0 for PT1000
 #define RNOMINAL  100.0
 
-/*-----------------------------------------------------------------
-
--------------------------------------------------------------------*/
-
-
 /*-----( Declare Variables )-----*/
 float heating_burner;
 float heating_tanktop;
