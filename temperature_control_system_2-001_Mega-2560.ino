@@ -168,7 +168,7 @@ void temperatureRead()
   Serial.println(heating_tanktop);
   Serial.print("Inline = ");
   Serial.println(heating_inline);
-  Serial.print("Hot water = ");
+  
   
   
   
