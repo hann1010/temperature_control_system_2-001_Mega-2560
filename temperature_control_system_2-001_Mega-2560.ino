@@ -166,7 +166,7 @@ void temperatureRead()
   Serial.println(heating_burner);
   Serial.print("Tank top = ");
   Serial.println(heating_tanktop);
-  Serial.print("Inline = ");
+  
   
   
   
