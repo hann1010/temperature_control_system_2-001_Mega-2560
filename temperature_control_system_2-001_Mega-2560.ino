@@ -163,7 +163,7 @@ void temperatureRead()
   //Debug
   /*
   Serial.print("Burner = ");
-  Serial.println(heating_burner);
+  
   
   
   
