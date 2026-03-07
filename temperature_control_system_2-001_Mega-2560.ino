@@ -162,7 +162,7 @@ void temperatureRead()
   outdoor = temperature_sensor_outdoor.temperature(RNOMINAL, RREF_outdoor);
   //Debug
   /*
-  Serial.print("Burner = ");
+  
   
   
   
